@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>MONTE SEU LANCHE | Sandus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandu&iacute;ches
+              saud&aacute;veis para melhor qualidade de vida&#33;">
+    <meta name="keywords" content="Sandu&iacute;che, lanche,
+              alimenta&ccedil;&atilde;o, saud&aacute;vel, sanduba, comer, natural">
+    <meta name="author" content="Cec&iacute;lia Dourado, Lucas
+              Eduardo, Ricardo Santos">
+    <link rel="icon" href="_imagem/logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+
+</head>
+
+<body onscroll="myFunction()">
+
+    <header class="full text-center">
+        <img src="_imagem/logo.png" alt="Sandus|Logotipo" width="%" height="100%">
+    </header>
+
+    <nav id="" class="menu-top">
+        <div class="navbar-title">
+            <button  onclick="menubtn()" class="btn-menu" id="btn-menu" type="button">
+                <a href="" id="a-home">
+                    Home
+                </a>
+            </button>
+        </div>
+        <ul id="menubar" class="menubar">
+            <li>
+                <a class="a-nav" href="Cardapio.html" target="_blank">Card&aacute;pio</a>
+            </li>
+            <li>
+                <a class="a-nav" href="MonteLanche.html" target="_blank">Monte seu lanche</a>
+            </li>
+            <li>
+                <a class="a-nav" href="SobreNos.html" target="_blank">Sobre N&oacute;s</a>
+            </li>
+            <li>
+                <a class="a-nav" href="FaleConosco.html" target="_blank">Fale Conosco</a>
+            </li>
+            <li>
+                <a class="a-nav" href="Encontre-nos.html" target="_blank">Encontre-nos</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+    
+    <div class="step">
+        <form>
+            <div id="step1" class="step-row">
+            <h3>Escolha o tipo de pão</h3>
+            <div class="group">
+                <div class="item">
+                        <input type="radio" name="pao" value="forma" id="forma" checked>
+                        <label for="forma">
+                        <figure>
+                            <img src="_imagem/forma.png">
+                            <figcaption>Pão de Forma</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                <div class="item">
+                        <input type="radio" name="pao" value="italiano" id="italiano">
+                        <label for="italiano">
+                        <figure>
+                            <img src="_imagem/italiano.png">
+                            <figcaption>Pão Italiano</figcaption>
+                        </figure>
+                        </label>
+                </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                        <input type="radio" name="pao" value="integral" id="integral">
+                        <label for="integral">
+                        <figure>
+                            <img src="_imagem/integral.jpg">
+                            <figcaption>Pão Integral</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="radio" name="pao" value="frances" id="frances">
+                        <label for="frances">
+                        <figure>
+                            <img src="_imagem/frances.png">
+                            <figcaption>Pão Frances</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <br/>
+            <span onclick="showStep('#step2')" class="button">Próximo</span>
+            </div>
+                <div id="step2" class="step-row">
+            <br/>
+            <h3>Escolha a salada</h3>
+            <div class="group">
+                <div class="item">
+                        <input type="checkbox" name="salada" value="alface" id="alface">
+                        <label for="alface">
+                        <figure>
+                            <img src="_imagem/alface.jpg">
+                            <figcaption>Alface</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="checkbox" name="salada" value="repolho" id="repolho">
+                        <label for="repolho">
+                        <figure>
+                            <img src="_imagem/repolho.png">
+                            <figcaption>Repolho roxo</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                        <input type="checkbox" name="salada" value="rucula" id="rucula">
+                        <label for="rucula">
+                        <figure>
+                            <img src="_imagem/rucula.png">
+                            <figcaption>Rúcula</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="checkbox" name="salada" value="brocolis" id="brocolis">
+                        <label for="brocolis">
+                        <figure>
+                            <img src="_imagem/brocolis.jpg">
+                            <figcaption>Salada de brocolis</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <br/>
+            <span onclick="showStep('#step3')" class="button">Próximo</span>
+                </div>
+                <div id="step3" class="step-row">
+            <br/>
+            <h3>Escolha o recheio</h3>
+            <div class="group">
+                <div class="item">
+                        <input type="radio" name="recheio" value="peru" id="peru" checked>
+                        <label for="peru">
+                        <figure>
+                            <img src="_imagem/peru.png">
+                            <figcaption>Peito de Peru</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="radio" name="recheio" value="atum" id="atum">
+                        <label for="atum">
+                        <figure>
+                            <img src="_imagem/atum.png">
+                            <figcaption>Atum</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                        <input type="radio" name="recheio" value="salmao" id="salmao">
+                        <label for="salmao">
+                        <figure>
+                            <img src="_imagem/salmao.jpg">
+                            <figcaption>Salmão</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="radio" name="recheio" value="frango" id="frango">
+                        <label for="frango">
+                        <figure>
+                            <img src="_imagem/frango.png">
+                            <figcaption>Frango</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <br/>
+            <span onclick="showStep('#step4')" class="button">Próximo</span>
+                </div>
+                <div id="step4" class="step-row">
+            <br/>
+            <h3>Escolha o molho</h3>
+            <div class="group">
+                <div class="item">
+                        <input type="checkbox" name="molho" value="barbecue" id="barbecue">
+                        <label for="barbecue">
+                        <figure>
+                            <img src="_imagem/barbecue.png">
+                            <figcaption>Barbecue</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="checkbox" name="molho" value="maionese" id="maionese">
+                        <label for="maionese">
+                        <figure>
+                            <img src="_imagem/maionese.jpg">
+                            <figcaption>Maionese</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                        <input type="checkbox" name="molho" value="parmesao" id="parmesao">
+                        <label for="parmesao">
+                        <figure>
+                            <img src="_imagem/parmesao.jpg">
+                            <figcaption>Molho Parmesão</figcaption>
+                        </figure>
+                        </label>
+                </div>
+                    <div class="item">
+                        <input type="checkbox" name="molho" value="alho" id="alho">
+                        <label for="alho">
+                        <figure>
+                            <img src="_imagem/alho.png">
+                            <figcaption>Molho de alho</figcaption>
+                        </figure>
+                        </label>
+                    </div>
+            </div>
+            <br/>
+            <span onclick="showStep('#step5')" class="button">Próximo</span>
+                </div>
+                <div id="step5" class="step-row">
+            <br/>
+            <span>Lanche Finalizado!!!</span>
+                </div>
+        </form>
+    </div>
+      <script src="_js/jquery-3.3.1.min.js"></script>
+    <script src="_js/script.js"></script>
+    </main>
+        </body>
+</html>
